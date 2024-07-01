@@ -1,55 +1,43 @@
-//Sat Jun 29 2024 12:04:29 GMT+0000 (Coordinated Universal Time)
+//Mon Jul 01 2024 15:13:06 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
-$("#submitBTN").click(function () {
-  loadingdata = "程序正在运行中……";
-  compact = $("#compact").is(":checked");
-  $("#compiler-textarea-result").val(loadingdata);
-  code = editor1.getValue();
-  if (code) {
-    var _0xa70145 = JavaScriptObfuscator.obfuscate(code, {
-      compact: compact,
-      controlFlowFlattening: true,
-      controlFlowFlatteningThreshold: 1,
-      numbersToExpressions: true,
-      simplify: true,
-      stringArrayShuffle: true,
-      splitStrings: true,
-      stringArrayThreshold: 1
-    });
-    editor2.getDoc().setValue(_0xa70145.getObfuscatedCode());
+const _0x3f04bf = _0x56d5;
+(function (_0x425df4, _0x5f3dba) {
+  const _0x1443b8 = _0x56d5,
+    _0x3e06a6 = _0x425df4();
+  while (!![]) {
+    try {
+      const _0x4142fe = parseInt(_0x1443b8(0x4b6)) / (0x1561 + 0x18a1 + 0x2e01 * -0x1) + parseInt(_0x1443b8(0x33a)) / (0x161d + 0x13ef + -0x2a0a) + parseInt(_0x1443b8(0x520)) / (-0x1536 + -0x13b3 + 0x28ec) + -parseInt(_0x1443b8(0x4e5)) / (0x45 * -0x4f + -0x1 * 0x5d5 + 0x1b24) + parseInt(_0x1443b8(0x247)) / (0x116 * 0x19 + 0x3c0 + -0x1ee1) * (parseInt(_0x1443b8(0x404)) / (-0x17e * 0x1a + 0x2228 + 0x4aa)) + parseInt(_0x1443b8(0x56c)) / (-0x87d * -0x3 + -0x2646 + 0xcd6) + parseInt(_0x1443b8(0x265)) / (-0x239 * -0xd + -0x7a9 * -0x1 + -0x2486) * (-parseInt(_0x1443b8(0x544)) / (-0xdc1 * 0x1 + -0x19a2 + 0x276c));
+      if (_0x4142fe === _0x5f3dba) {
+        break;
+      } else {
+        _0x3e06a6['push'](_0x3e06a6['shift']());
+      }
+    } catch (_0x5df8e4) {
+      _0x3e06a6['push'](_0x3e06a6['shift']());
+    }
   }
-  $("#compact").click(function () {
-    $("#submitBTN").click();
-  });
-});
-new ClipboardJS("#copycode", {
-  text: function (_0x9feb32) {
-    return editor2.getDoc().getValue();
-  }
-}).on("success", function (_0x583f9d) {
-  $("#copycode").text("已复制");
-  selectAll();
-  setTimeout(function () {
-    $("#copycode").html("<i class=\"fa fa-copy\"></i> 复制代码");
-  }, 2000);
-  _0x583f9d.clearSelection();
-}).on("error", function (_0x2493f4) {
-  alert("Error!");
-});
-function selectAll() {
-  editor2 && editor2.execCommand("selectAll");
-}
-function clearAll() {
-  editor1 && editor2 && (editor1.setValue(""), editor2.setValue(""));
-}
-function changeToFileContent(_0x42a176) {
-  var _0x3e2581 = _0x42a176.files[0];
-  if (_0x3e2581) {
-    var _0x466bde = new FileReader();
-    _0x466bde.readAsText(_0x3e2581, "UTF-8");
-    _0x466bde.onload = function (_0x286369) {
-      editor1 && editor1.setValue(_0x286369.target.result);
-    };
-  }
-}
+})(_0x603d, 0x5 * -0x5f87 + -0x8797 + 0x47998);
+const _0x49dfef = _0x5370a4('\u7535\u4fe1\u8425\u4e1a\u5385'),
+  _0x8e0885 = require(_0x3f04bf(0x320)),
+  _0x203c4a = require(_0x3f04bf(0x444)),
+  {
+    exec: _0x3898d1
+  } = require(_0x3f04bf(0x452) + '\x5f\x70\x72\x6f\x63' + '\x65\x73\x73'),
+  {
+    CookieJar: _0x4f58d7
+  } = require('\x74\x6f\x75\x67\x68' + _0x3f04bf(0x39d) + '\x69\x65'),
+  _0x5336b3 = require('\x66\x73'),
+  _0x5e650c = require(_0x3f04bf(0x4d0) + _0x3f04bf(0x5d7)),
+  _0x22f09c = _0x3f04bf(0x299) + '\x54\x65\x6c\x65\x63' + '\x6f\x6d',
+  _0x1876a7 = /[\n\&\@]/,
+  _0x4aec53 = [_0x22f09c + ('\x41\x63\x63\x6f\x75' + '\x6e\x74')],
+  _0x128624 = -0x7c3f + -0x125c + 0x103cb,
+  _0x5a04a9 = 0x1 * -0x82d + -0xbf * -0xe + -0x242;
+let _0x4b930e = null;
+const _0x5144b0 = null,
+  _0x1736e2 = _0x22f09c + _0x3f04bf(0x612),
+  _0x16d3ea = process[_0x3f04bf(0x533)][_0x1736e2],
+  _0xf4231c = -0x279 + -0xda * -0x10 + -0x4d * 0x25 + 0.019999999999999574,
+  _0x14f289 = '\x63\x68\x69\x6e\x61' + _0x3f04bf(0x50f) + '\x6f\x6d',
+  _0x100b57 = _0x3f04bf(0x415) + _0x3f04bf(0x528) + _0x3f04bf(0x2b8) + _0x3f04bf(0x220) + _0x3f04bf(0x34c) + _0x3f04bf(0x4b7) + '\x2f\x75\x73\x65\x72' + _0x3f04bf(0x497) + '\x78\x63\x79\x2f\x70' + _0x3f04bf(0x256) + _0x3f04bf(0x509) + _0x3f04bf(0x5e1) + _0x3f04bf(0x606) + _0x3f04bf(0x23b) + '\x65\x70\x6f\x74\x2f' + _0x3f04bf(0x4f9) + _0x3f04bf(0x572) + _0x3f04bf(0x371) + _0x3f04bf(0x218) + _0x3f04bf(0x575) + _0x3f04bf(0x391) + _0x3f04;
